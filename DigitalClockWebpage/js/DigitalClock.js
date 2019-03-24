@@ -3,7 +3,6 @@
  */
 
 var _ON_ = false;
-const _DELTA_ = 5000;
 
 var hours_textarea = null;
 var minutes_textarea = null;
