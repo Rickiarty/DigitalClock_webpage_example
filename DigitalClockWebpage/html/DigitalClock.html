@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Digital Clock on webpage </title>
+</head>
+<body bgcolor="#00EECC">
+	<div>
+		<textarea readonly id="hours" rows="1" cols="2">00</textarea>
+		<button onclick="onBtnHDClick()">-</button>
+		<button onclick="onBtnHUClick()">+</button>
+		<textarea readonly id="minutes" rows="1" cols="2">00</textarea>
+		<button onclick="onBtnMDClick()">-</button>
+		<button onclick="onBtnMUClick()">+</button>
+		<textarea readonly id="seconds" rows="1" cols="2">00</textarea>
+		<button onclick="onBtnSDClick()">-</button>
+		<button onclick="onBtnSUClick()">+</button>
+		<button id="switch" onclick="onBtnClick()"> OFF</button>
+		<script src="../js/DigitalClock.js"></script>
+	</div>
+</body>
