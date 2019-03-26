@@ -21,7 +21,7 @@ function onBtnClick() {
 
 function onBtnHDClick() {
     if (!this._ON_) {
-        num = parseInt(this.hours_textarea.value);
+        var num = parseInt(this.hours_textarea.value);
         num = (num + 23) % 24;
         this.hours_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
@@ -29,7 +29,7 @@ function onBtnHDClick() {
 
 function onBtnHUClick() {
     if (!this._ON_) {
-        num = parseInt(this.hours_textarea.value);
+        var num = parseInt(this.hours_textarea.value);
         num = (num + 1) % 24;
         this.hours_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
@@ -37,7 +37,7 @@ function onBtnHUClick() {
 
 function onBtnMDClick() {
     if (!this._ON_) {
-        num = parseInt(this.minutes_textarea.value);
+        var num = parseInt(this.minutes_textarea.value);
         num = (num + 59) % 60;
         this.minutes_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
@@ -45,7 +45,7 @@ function onBtnMDClick() {
 
 function onBtnMUClick() {
     if (!this._ON_) {
-        num = parseInt(this.minutes_textarea.value);
+        var num = parseInt(this.minutes_textarea.value);
         num = (num + 1) % 60;
         this.minutes_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
@@ -53,7 +53,7 @@ function onBtnMUClick() {
 
 function onBtnSDClick() {
     if (!this._ON_) {
-        num = parseInt(this.seconds_textarea.value);
+        var num = parseInt(this.seconds_textarea.value);
         num = (num + 59) % 60;
         this.seconds_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
@@ -61,22 +61,22 @@ function onBtnSDClick() {
 
 function onBtnSUClick() {
     if (!this._ON_) {
-        num = parseInt(this.seconds_textarea.value);
+        var num = parseInt(this.seconds_textarea.value);
         num = (num + 1) % 60;
         this.seconds_textarea.innerText = this.padding_left(num.toString(), 2, "0");
     }
 }
 
 function timeIncreasedByOneSecond() {
-    sec = parseInt(this.seconds_textarea.value);
+    var sec = parseInt(this.seconds_textarea.value);
     sec = (sec + 1) % 60;
     this.seconds_textarea.innerText = this.padding_left(sec.toString(), 2, "0");
     if (sec == 0) {
-        min = parseInt(this.minutes_textarea.value);
+        var min = parseInt(this.minutes_textarea.value);
         min = (min + 1) % 60;
         this.minutes_textarea.innerText = this.padding_left(min.toString(), 2, "0");
         if (min == 0) {
-            hour = parseInt(this.hours_textarea.value);
+            var hour = parseInt(this.hours_textarea.value);
             hour = (hour + 1) % 24;
             this.hours_textarea.innerText = this.padding_left(hour.toString(), 2, "0");
         }
