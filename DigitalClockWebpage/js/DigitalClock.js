@@ -11,10 +11,10 @@ var seconds_textarea = null;
 function onBtnClick() {
     this._ON_ = !this._ON_;
     if(this._ON_) {
-        document.getElementById("switch").innerText = " ON ";
+        document.getElementById("switch").innerText = "&nbspON&nbsp";
         document.getElementById("switch").style.backgroundColor = "#FF0000";
     } else {
-        document.getElementById("switch").innerText = " OFF";
+        document.getElementById("switch").innerText = "&nbspOFF";
         document.getElementById("switch").style.backgroundColor = "#808080";
     }
 }
@@ -143,10 +143,10 @@ async function run() {
 
 function initialize() {
     this._ON_ = true;
-    document.getElementById("switch").innerText = " ON ";
+    document.getElementById("switch").innerText = "&nbspON&nbsp";
     document.getElementById("switch").style.backgroundColor = "#FF0000";
     //this._ON_ = false;
-    //document.getElementById("switch").innerText = " OFF";
+    //document.getElementById("switch").innerText = "&nbspOFF";
     //document.getElementById("switch").style.backgroundColor = "#808080";
     this.hours_textarea = document.getElementById('hours');
     this.minutes_textarea = document.getElementById('minutes');
